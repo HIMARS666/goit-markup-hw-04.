@@ -101,6 +101,14 @@ button {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+.mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .mail-item {
   margin-right: 50px;
 }
@@ -118,7 +126,15 @@ button {
   padding-bottom: 200px;
   max-width: 1600px;
   text-align: center;
-  background-color: #2f303a;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-left: auto;
@@ -181,6 +197,17 @@ button {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+/* Иконки */
+.icons-container {
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 /* Чем мы занимаемся */
 .what-we-do {
   padding-bottom: 94px;
@@ -212,6 +239,12 @@ button {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
+.our-team-list {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-team {
   display: flex;
 }
@@ -241,11 +274,80 @@ button {
   color: var(--main-text-color);
 }
 .proffesion {
+  margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+/* Соц сети */
+.icons-list {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.icons-items a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+.icons-items a:hover,
+.icons-items a:focus {
+  background-color: var(--highlight-color);
+  fill: var(--white-color);
+}
+.icons-list li:not(:last-child) {
+  margin-right: 10px;
+}
+/* Постоянные клиенты */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.clients-list {
+  display: flex;
+  margin-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link:hover {
+  border-color: var(--highlight-color);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--highlight-color);
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* Портфолио */
 .hero-portfolio {
@@ -303,6 +405,11 @@ button {
 .cards:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
+.cards:hover,
+.cards:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .item-title {
   font-weight: bold;
   font-size: 18px;
@@ -318,7 +425,10 @@ button {
   color: var(--second-text-color);
 }
 /* Подвал */
-
+.footer-section .container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -348,4 +458,38 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+/* Присоединяйтесь */
+.connect-container {
+  margin-left: 70px;
+}
+.connect-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.connect-list {
+  display: flex;
+}
+.connect-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.connect-icons a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.connect-icons a:hover,
+.connect-icons a:focus {
+  background-color: var(--highlight-color);
+  fill: var(--white-color);
 }
